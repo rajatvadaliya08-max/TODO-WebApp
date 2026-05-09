@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title> To-Do App</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<div class="container">
+  <h2>To-Do App </h2>
+
+  <div class="top-bar">
+    <input type="text" id="search" placeholder="Search...">
+    <button onclick="toggleDark()">🌙</button>
+  </div>
+
+  <input type="text" id="taskInput" placeholder="Task">
+  
+  <select id="priority">
+    <option value="low">Low Priority</option>
+    <option value="medium">Medium Priority</option>
+    <option value="high">High Priority</option>
+  </select>
+
+  <input type="date" id="dueDate">
+
+  <button class="add-btn" onclick="addTask()">Add Task</button>
+  <button class="clear-btn" onclick="clearAll()">Clear All</button>
+
+  <p id="taskCount"></p>
+
+  <ul id="list"></ul>
+
+  <div class="progress">
+    <div class="progress-bar" id="progressBar"></div>
+  </div>
+  <p id="progressText">0%</p>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>

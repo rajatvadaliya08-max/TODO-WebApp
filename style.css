@@ -1,0 +1,86 @@
+body {
+  font-family: Arial;
+  background: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  transition: 0.3s;
+}
+
+.dark { background: #121212; color: white; }
+
+.container {
+  background: white;
+  padding: 20px;
+  width: 420px;
+  border-radius: 12px;
+}
+
+.dark .container { background: #1e1e1e; }
+
+input, select {
+  padding: 8px;
+  margin: 4px 0;
+  width: 100%;
+}
+
+button {
+  padding: 6px 10px;
+  border: none;
+  cursor: pointer;
+  margin: 2px;
+  border-radius: 6px;
+}
+
+.add-btn { background: #28a745; color: white; }
+.delete-btn { background: #dc3545; color: white; }
+.edit-btn { background: #ffc107; }
+.clear-btn { background: #6c757d; color: white; }
+
+ul { list-style: none; padding: 0; }
+
+li {
+  background: #eee;
+  margin: 6px 0;
+  padding: 10px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.dark li { background: #333; }
+
+.completed { text-decoration: line-through; opacity: 0.6; }
+
+.high { border-left: 5px solid red; }
+.medium { border-left: 5px solid orange; }
+.low { border-left: 5px solid green; }
+
+.progress {
+  height: 10px;
+  background: #ccc;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.progress-bar {
+  height: 100%;
+  background: green;
+  width: 0%;
+  border-radius: 5px;
+}
+
+.top-bar {
+  display: flex;
+  gap: 5px;
+}
+
+.top-bar input {
+  flex: 1;
+}
+
+.small {
+  font-size: 12px;
+  opacity: 0.7;
+}
